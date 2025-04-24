@@ -3,5 +3,5 @@ p_Sum=[]
 total=0
 for num in a:
     total+=num
-    p.Sum.append(total)
+    p_Sum.append(total)
 print(p_Sum)
