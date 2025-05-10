@@ -9,8 +9,8 @@ def slidingWindow(k,arr):
         sum+=arr[i]
     max_sum=sum
     for i in range(n-k):
-        sum-=arr[i]
-        sum+=arr[i+k]
+        sum-=arr[i]                                  #remove the first value
+        sum+=arr[i+k]                                #adding the ending value
         max_sum=max(max_sum,sum)
     return max_sum
 k=int(input("Enter Kth Values:"))                    # k is the length of the substring of the user wants
